@@ -1,0 +1,10 @@
+body{font-family:Arial,Helvetica,sans-serif;margin:0;padding:0}
+.topo{background:#003366;color:#fff;padding:12px 20px;display:flex;justify-content:space-between;align-items:center}
+.topo nav a{color:#fff;margin-left:12px;text-decoration:none}
+.hero{padding:60px;text-align:center}
+.login-body{display:flex;align-items:center;justify-content:center;height:100vh;background:linear-gradient(180deg,#001133,#003399)}
+.login-container{background:#fff;padding:20px;border-radius:8px;width:320px;box-shadow:0 6px 20px rgba(0,0,0,0.15)}
+form input,form textarea,select{width:100%;padding:8px;margin:6px 0;border:1px solid #ddd;border-radius:4px}
+button{background:#003399;color:#fff;padding:10px 14px;border:none;border-radius:6px;cursor:pointer}
+table{width:100%;border-collapse:collapse}
+th,td{padding:8px;text-align:left}

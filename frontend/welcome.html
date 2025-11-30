@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Welcome - Projeto CSM</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>Bem-vindo</h1>
+    <nav>
+      <a href="/index.html">Home</a>
+      <a href="/produtos/listar.html">Produtos</a>
+      <a href="/categorias/listar.html">Categorias</a>
+      <a href="/login.html" id="logout">Sair</a>
+    </nav>
+  </header>
+  <main>
+    <h2 id="welcomeName"></h2>
+    <p>Você está logado no sistema.</p>
+  </main>
+  <script>
+    const user = JSON.parse(localStorage.getItem('user'));
+    if (!user) location.href = '/login.html';
+    document.getElementById('welcomeName').innerText = `Olá, ${user.name} (${user.role})`;
+    document.getElementById('logout').addEventListener('click', () => {
+      localStorage.removeItem('token');
+      localStorage.removeItem('user');
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <title>Criar Produto</title>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+</head>
+<body>
+  <header class="topo">
+    <h1>Criar Produto</h1>
+    <nav><a href="/produtos/listar.html">Voltar</a></nav>
+  </header>
+
+  <main>
+    <form id="criarForm">
+      <label>Nome</label><input type="text" id="name" required />
+      <label>Descrição</label><textarea id="description"></textarea>
+      <label>Preço</label><input type="number" id="price" step="0.01" required />
+      <label>Categoria</label>
+      <select id="category_id"></select>
+      <button type="submit">Criar</button>
+    </form>
+    <p id="msg" style="color:red"></p>
+  </main>
+
+  <script src="/assets/js/produtos.js"></script>
+</body>
+</html>
